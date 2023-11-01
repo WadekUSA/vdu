@@ -11,7 +11,7 @@ Files
 * vdu-25.png - an initial screen after the VDU driver execution in MS-DOS (80x25 mode)
 * vdu-30.png - an initial screen after the VDU driver execution in MS-DOS (80x30 mode)
 * vdu.txt - TEXT format for all symbols
-* vdu.glyphs - a glyph file (all symbols on the same page)
+* vdu-glyph.png - a glyph file (all symbols on the same page)
 * vdu.8x16.raw - font in RAW format
 * vdu.8x16.psf - font in PSF1 format
 * vdu.8x16.psf2 - font in PSF2 format
@@ -43,7 +43,7 @@ Linux
 Use `setfont` command to apply VDU console font:
 
 ```
-setfont /usr/share/fonts/vdu.8x16.raw
+setfont /usr/share/consolefonts/vdu.8x16.raw
 ```
 
 BSD
@@ -52,9 +52,8 @@ BSD
 I used this scenario to change the console font in NetBSD:
 
 ```
-wsfontload -N vdu /root/vdu.8x16.raw
+wsfontload -N vdu /usr/share/wscons/fonts/vdu.8x16.raw
 wsconsctl -dw font=vdu
 ```
 
-# Good luck!
-
+Good luck!
