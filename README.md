@@ -57,4 +57,3 @@ wsconsctl -dw font=vdu
 ```
 
 Good luck!
-
